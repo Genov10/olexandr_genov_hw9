@@ -1,0 +1,445 @@
+/* RESET */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  line-height: 1;
+  font-size: 1rem;
+  font-family:Graphik LC TT, Helvetica, sans-serif;
+  background-color: #E5E5E5;
+}
+
+a,
+p {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+ol, ul {
+  list-style: none;
+  font-size: 0;
+  color: black;
+}
+
+/* HEADER */
+.logo,
+.menu {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+}
+
+.header {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  padding-top: 2%;
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+
+.logo {
+  margin-left: 3%;
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  margin-left: 15%;
+}
+
+.menu__link {
+  font-size: 1rem;
+  color: black;
+}
+
+.menu__link:hover {
+  color: orangered; 
+  transition: all 0.7s;
+}
+
+.registration {
+  margin: 2% 0% 1% 45%;
+  display: flex;
+  width: 120px;
+  height: 45px;
+}
+
+.registration__item {
+  display: block;
+  width: 120px;
+  height: 45px;
+  white-space: nowrap;
+}
+
+.registration__login {
+  padding: 28%;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  outline: 1px solid black;
+}
+
+.registration__free {
+  padding: 20%;
+  margin-left: 44%;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  background-color: orangered;
+}
+
+/* MAIN */
+.main {
+  margin-top: 12%;
+}
+
+/* BLOCK1 */
+.book {
+  display: flex;
+  width: 95%;
+  margin-left: 2.5%;
+}
+
+.book__information {
+  margin-left: 5%;
+}
+
+.book__text {
+  margin-top: 7%;
+  font-size: 1.6rem;
+}
+
+.book__picture {
+  width: 90%;
+  float: right;
+}
+
+.book__registration {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+  white-space: nowrap;
+}
+
+.book__login {
+  padding: 20%;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: orangered;
+}
+
+.book__free {
+  padding: 14%;
+  margin-left: 35%;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  outline: 1px solid black;
+}
+
+.book__login:hover,
+.book__free:hover,
+.registration__login:hover,
+.registration__free:hover {
+  color: white;
+  background-color: black;
+  transition: all 0.7s;
+}
+
+.book__sidetext {
+  display: block;
+  margin-top: 4%;
+  font-size: 0.7rem;
+}
+
+/* BLOCK2 */
+.tool {
+  margin-top: 7%;
+  padding: 6% 0%;
+  background-color: #FF9C7D;
+}
+
+.tool__titel {
+  text-align: center;
+}
+
+.tool__img {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 6%;
+}
+
+/* BLOCK3 */
+.exemple {
+  padding: 8% 0% 4% 8%;
+  background-color: white;
+}
+
+.exemple__innerblock {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+}
+
+.exemple__picture {
+  width: 50%;
+  margin-right: 5%;
+}
+
+.exemple__information {
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.exemple__text {
+  margin-top: 3%;
+  font-size: 1.2rem;
+}
+
+.exemple__sublink {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.exemple__link {
+  display: block;
+  margin-top: 6%;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.exemple__sublink:hover,
+.exemple__link:hover {
+  color: orangered;
+  transition: all 0.7s;
+}
+
+/* BLOCK4 */
+.product {
+  padding: 7% 0%;
+  background-color: #FFF8E4;
+}
+
+.product__titel {
+  margin-top: 7%;
+  text-align: center;
+}
+
+.product__wrap {
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.product__picture {
+  margin-left: 15%;
+}
+
+.product__text {
+  margin-top: 7%;
+  text-align: center;
+}
+
+/* BLOCK5 */
+.system {
+  padding: 7% 0%;
+  background-color: white;
+}
+
+.system__titel {
+  text-align: center;
+}
+
+.system__wrap {
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.system__subtitel {
+  margin-top: 7%;
+}
+
+.system__picture {
+  margin-left: 15%;
+}
+
+.system__text {
+  margin-top: 7%;
+}
+
+/* BLOCK6 */
+.developer {
+  display: flex;
+  background: #C9E8F2;
+}
+
+.developer__information {
+  margin: 5%;
+  /* width: 150%; */
+}
+
+.developer__text {
+  font-size: 1.8rem;
+}
+
+.developer__sidetext {
+  display: block;
+  margin-top: 4%;
+  font-size: 0.7rem;
+}
+
+.developer__picture {
+  width: 25%;
+  margin: 5%;
+}
+
+/* BLOCK7 */
+.mark {
+  padding: 5% 0%;
+  background: #DABC98;
+}
+
+.mark__picture {
+  margin: 0% 10%;
+  width: 80%;
+}
+
+/* BLOCK8 */
+.integrate {
+  margin: 10% 0%;
+}
+.integrate__title {
+  text-align: center;
+}
+
+.integrate__text {
+  margin-top: 2%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.integrate__picture {
+  margin-left: 13%;
+}
+
+.integrate__link {
+  display: block;
+  padding: 2%;
+  width: 15%;
+  margin-left: 40%;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+  background-color: orangered;
+}
+
+.integrate__link:hover {
+  color: white;
+  background-color: black;
+  transition: all 0.7s;
+}
+
+/* BLOCK9 */
+.advertising {
+  padding: 10% 0%;
+  background: #FF9C7D;
+}
+
+.advertising__title {
+  text-align: center;
+}
+
+.advertising__text {
+  margin-top: 4%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.advertising__link {
+  display: block;
+  padding: 2%;
+  width: 10%;
+  margin-top: 4%;
+  margin-left: 45%;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+  background-color: black;
+}
+
+/* BLOCK10 */
+.library {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.library__wrap {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.library__sublink {
+  display: block;
+  margin-top: 7%;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.library__link {
+  display: block;
+  margin-top: 7%;
+  color: black; 
+}
+
+.library__sublink:hover,
+.library__link:hover {
+  color: orangered;
+  transition: all 0.7s; 
+}
+
+/* FOOTER */
+.footer__wrap {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 5%;
+  padding-top: 3%;
+  border-top: 1px solid #000;
+}
+
+.footer__text {
+  margin-left: 4%;
+}
+
+.footer__subtext {
+  margin-left: 45%;
+}
+
