@@ -1,13 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sound</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sound</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">
+                <div class="logo__wrap">
+                    <a href="#">
+                        <h1>
+                            SOUND
+                        </h1>
+                    </a>
+                </div>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            FOR YOU
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            TOP
+                        </a>
+                        <ul class="menu__submenu">
+                            <li class="menu__sublink">
+                                <a href="#">
+                                    IN YOUR COUNTRY 
+                                </a>
+                            </li>
+                            <li class="menu__sublink">
+                                <a href="#">
+                                    AROUND THE WOLD
+                                </a>
+                            </li>
+                            <li class="menu__sublink">
+                                <a href="#">
+                                    CHOOSE COUNTRY
+                                </a>
+                                <ul class="menu__subsubmenu">
+                                    <li class="menu__subsublink">
+                                        <a href="#">
+                                            UKRAINE  
+                                        </a>
+                                    </li>
+                                    <li class="menu__subsublink">
+                                        <a href="#">
+                                            USA
+                                        </a>
+                                    </li>
+                                    <li class="menu__subsublink">
+                                        <a href="#">
+                                            UK
+                                        </a>
+                                    </li>
+                                    <li class="menu__subsublink">
+                                        <a href="#">
+                                            ITALY
+                                        </a>
+                                    </li>
+                                    <li class="menu__subsublink">
+                                        <a href="#">
+                                            SPAIN
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            MY PROFILE
+                        </a>
+                        <ul class="menu__submenu">
+                            <li class="menu__sublink">
+                                <a href="#">
+                                    FAVOURITE
+                                </a>
+                            </li>
+                            <li class="menu__sublink">
+                                <a href="#">
+                                    PLAYLISTS
+                                </a>
+                            </li>
+                            <li class="menu__sublink">
+                                <a href="#">
+                                    ARTISTS
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            BECOME AN ARTIST
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__wrap">
+                <div class="main__conteiner">
+                    <img src="img/title.jpg" alt="title" class="main__picture">
+                    <audio id="audio" controls autoplay src="audio/otherside.mp3">
+                        Браузер не поддерживает воспроизведение звуковых медиафайлов
+                    </audio>
+                </div>
+                <div class="main__conteiner">
+                    <div class="main__text">
+                        «Otherside» — песня американской рок-группы Red Hot Chili Peppers, третий сингл из альбома Californication. Лирика песни посвящена борьбе с наркозависимостью, близкая тема для вокалиста группы — Энтони Кидиса, на тот момент экс-наркомана. Песня добилась хороших результатов в чартах: она достигла 14-й позиции в Billboard Hot 100 
+                    </div>
+                </div>
+            </div>
+            <iframe class="main__video" src="https://www.youtube.com/embed/rn_YodiJO6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </main>
+        <footer class="footer">
+            <h3>Made by Genov10| 2022</h3>
+        </footer>
+        <script type="text/javascript">
+            if (!Modernizr.audio) {
+                alert("Браузер не поддерживает воспроизведение звуковых файлов");
+            }
+            else {
+                var audio = document.getElementById("audio");
+                var res = audio.canPlayType('audio/ogg; codecs="vorbis"');
+                if (res) alert(res + " can play ogg vorbis");
+                else alert("no support for ogg vorbis");
+            }
+    
+        </script>
+    </div>
 </body>
 </html>
