@@ -15,7 +15,7 @@ body {
     line-height: 1;
     font-size: 1rem;
     font-family:Arial, Helvetica, sans-serif;
-    background-color: white;
+    background-color: #141414;
 }
 
 a,
@@ -31,7 +31,8 @@ ol, ul {
 
 /* HEADER */
 .header {
-    background: orangered;
+    background: black;
+    border-bottom: 4px solid green;
 }
 
 /* LOGO */
@@ -44,11 +45,14 @@ ol, ul {
     margin: 3% 5%;
 }
 
+h1 {
+    text-shadow: 10px 10px 0px greenyellow;
+}
+
 h1,
 h2 {
-    font-size: 3rem;
-    color: orangered;
-    text-shadow: 10px 10px 0px yellow;
+    font-size: 2rem;
+    color: green;
     -webkit-text-stroke: 1px white;  
 }
 
@@ -66,6 +70,7 @@ h2 {
 }
 
 .menu__item:hover {
+    background-color: green;
     outline: 1px solid white;
 }
 
@@ -88,7 +93,7 @@ h2 {
     width: auto;
     height: 50px;
     white-space: nowrap;
-    background: orangered;
+    background: green;
     border: 1px solid white;
     font-size: 1rem;
 }
@@ -123,28 +128,47 @@ h2 {
 .main__picture {
     width: 100%;
     border-radius: 20px;
+    border: 1px solid white;
+}
+
+#audio::-webkit-media-controls-panel,
+#audio::-webkit-media-controls-timeline-container,
+#audio::-webkit-media-controls-current-time-display,
+#audio::-webkit-media-controls-time-remaining-display,
+#audio::-webkit-media-controls-timeline,
+#audio::-webkit-media-controls-volume-slider-container,
+#audio::-webkit-media-controls-volume-slider {
+	background: green;
+	color: black;
+}
+
+.main__infomation {
+    width: 50%;
+    padding: 8% 6%;
+    margin: 0% 5%;
+    background-color: green;
+    border: 1px solid white;
+    border-radius: 20px;
 }
 
 .main__text {
     display: inline-block;
-    width: 50%;
-    margin: 5%;
 }
 
 .main__video {
-    width: 90%;
-    height: 90%; 
-    margin-left: 5%;
-    /* width="880" height="660" */
+    width: 50%;
+    height: 50%; 
+    margin-left: 25%;
 }
 
 /* FOOTER */
 
 h3 {
     padding: 2%;
-    background: orangered;
+    margin-top: 5%;
+    background-color: black;
+    border-top: 4px solid green;
     text-align: center;
-    font-family: 'Times New Roman', sans-serif;
     font-size: 0.8rem;
     color: white;
 }

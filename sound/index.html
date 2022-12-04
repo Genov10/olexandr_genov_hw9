@@ -14,7 +14,7 @@
                 <div class="logo__wrap">
                     <a href="#">
                         <h1>
-                            SOUND
+                           ((( SOUND )))
                         </h1>
                     </a>
                 </div>
@@ -112,8 +112,15 @@
                     </audio>
                 </div>
                 <div class="main__conteiner">
-                    <div class="main__text">
-                        «Otherside» — песня американской рок-группы Red Hot Chili Peppers, третий сингл из альбома Californication. Лирика песни посвящена борьбе с наркозависимостью, близкая тема для вокалиста группы — Энтони Кидиса, на тот момент экс-наркомана. Песня добилась хороших результатов в чартах: она достигла 14-й позиции в Billboard Hot 100 
+                    <div class="main__infomation">
+                        <h2 class="main__title">
+                            Otherside
+                            <br>
+                            Red Hot Chill & Papers 
+                        </h2>
+                        <p class="main__text">
+                            «Otherside» — песня американской рок-группы Red Hot Chili Peppers, третий сингл из альбома Californication. Лирика песни посвящена борьбе с наркозависимостью, близкая тема для вокалиста группы — Энтони Кидиса, на тот момент экс-наркомана. Песня добилась хороших результатов в чартах: она достигла 14-й позиции в Billboard Hot 100 
+                        </p>
                     </div>
                 </div>
             </div>
@@ -122,18 +129,7 @@
         <footer class="footer">
             <h3>Made by Genov10| 2022</h3>
         </footer>
-        <script type="text/javascript">
-            if (!Modernizr.audio) {
-                alert("Браузер не поддерживает воспроизведение звуковых файлов");
-            }
-            else {
-                var audio = document.getElementById("audio");
-                var res = audio.canPlayType('audio/ogg; codecs="vorbis"');
-                if (res) alert(res + " can play ogg vorbis");
-                else alert("no support for ogg vorbis");
-            }
-    
-        </script>
+        <script src="script/script.js"></script>
     </div>
 </body>
 </html>
