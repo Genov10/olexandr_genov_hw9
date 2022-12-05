@@ -116,7 +116,7 @@ ol, ul {
 .book {
   display: flex;
   width: 95%;
-  margin-left: 2.5%;
+  margin: auto;
 }
 
 .book__information {
@@ -307,7 +307,6 @@ ol, ul {
 
 .developer__information {
   margin: 5%;
-  /* width: 150%; */
 }
 
 .developer__text {
@@ -337,24 +336,24 @@ ol, ul {
 }
 
 /* BLOCK8 */
-.integrate {
-  margin: 10% 0%;
+.Integrate {
+  margin: 5% 0;
 }
-.integrate__title {
+.Integrate__title {
   text-align: center;
 }
 
-.integrate__text {
+.Integrate__text {
   margin-top: 2%;
   text-align: center;
   font-size: 1.2rem;
 }
 
-.integrate__picture {
+.Integrate__picture {
   margin-left: 13%;
 }
 
-.integrate__link {
+.Integrate__link {
   display: block;
   padding: 2%;
   width: 15%;
@@ -365,7 +364,7 @@ ol, ul {
   background-color: orangered;
 }
 
-.integrate__link:hover {
+.Integrate__link:hover {
   color: white;
   background-color: black;
   transition: all 0.7s;
