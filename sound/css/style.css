@@ -156,8 +156,9 @@ h2 {
 }
 
 .main__video {
+    /* width: 125%; */
+    height: 400px;
     width: 50%;
-    height: 50%; 
     margin-left: 25%;
 }
 
